@@ -177,12 +177,12 @@
   line-height: 28px;
   letter-spacing: 0.01em;
 }
-#feature .feature-container {
+#feature .feature-container, #feature .communtiy-right {
   display: flex;
   align-items: center;
   max-width: 750px;
 }
-#feature .feature-container h3 {
+#feature .feature-container h3, #feature .communtiy-right h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -192,7 +192,7 @@
   text-transform: uppercase;
   color: #B33CDB;
 }
-#feature .feature-container h2 {
+#feature .feature-container h2, #feature .communtiy-right h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -201,7 +201,7 @@
   color: #1F1F26;
   padding: 13px 0;
 }
-#feature .feature-container p {
+#feature .feature-container p, #feature .communtiy-right p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -210,7 +210,7 @@
   letter-spacing: 0.01em;
   color: #426666;
 }
-#feature .feature-container button {
+#feature .feature-container button, #feature .communtiy-right button {
   border: 0px;
   background-color: rgba(255, 255, 255, 0);
   padding: 20px 0;
@@ -218,18 +218,91 @@
   font-weight: 400;
   cursor: pointer;
 }
-#feature .feature-container button svg {
+#feature .feature-container button svg, #feature .communtiy-right button svg {
   width: 1rem;
   height: 1rem;
 }
-#feature .feature-container button > svg {
+#feature .feature-container button > svg, #feature .communtiy-right button > svg {
   width: 20px;
   margin-left: 10px;
   transition: transform 0.3s ease-in-out;
 }
-#feature .feature-container button:hover svg {
+#feature .feature-container button:hover svg, #feature .communtiy-right button:hover svg {
   transform: translateX(5px);
 }
-#feature .feature-container button:active {
+#feature .feature-container button:active, #feature .communtiy-right button:active {
+  transform: scale(0.95);
+}
+
+#community {
+  display: flex;
+  justify-content: center;
+}
+#community .community-container {
+  width: 750px;
+  height: 378px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#community .community-container .communtiy-left img {
+  height: auto;
+}
+#community .community-container .communtiy-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  max-width: 750px;
+}
+#community .community-container .communtiy-right h3 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #FBBA33;
+}
+#community .community-container .communtiy-right h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1F1F26;
+  padding: 13px 0;
+}
+#community .community-container .communtiy-right p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.01em;
+  color: #426666;
+}
+#community .community-container .communtiy-right button {
+  border: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 20px 0;
+  display: flex;
+  font-weight: 400;
+  cursor: pointer;
+}
+#community .community-container .communtiy-right button svg {
+  width: 1rem;
+  height: 1rem;
+}
+#community .community-container .communtiy-right button > svg {
+  width: 20px;
+  margin-left: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+#community .community-container .communtiy-right button:hover svg {
+  transform: translateX(5px);
+}
+#community .community-container .communtiy-right button:active {
   transform: scale(0.95);
 }/*# sourceMappingURL=style.css.map */
