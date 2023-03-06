@@ -401,9 +401,8 @@ $inter: 'Inter';
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
-
     .service-text{
-        max-width: 600px;
+        width: 600px;
         margin: 0 60px;
         h1{
             font-family: $poppins;
@@ -421,28 +420,86 @@ $inter: 'Inter';
     .service-container{
         display: flex;
         width: 100%;
-        justify-content: space-evenly;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 90px;
 
-        div{
-            width: 300px;
+        
+        .card {
+            width: 280px;
             height: 240px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
-        }
-
-        div:nth-of-type(1) {
-            background: url(image/admin1.svg);
-        }
-        div:nth-of-type(2) {
-            background: url(image/admin2.svg);
-        }
-        div:nth-of-type(3) {
-            background: url(image/admin3.svg);
-        }
-        span{
-            width: 360px;
-            height: 300px;
+            position: relative;
+            &.satu{
+                background: url(image/admin1.svg);
+            }
+            &.dua {
+                background: url(image/admin2.svg);
+            }
+            &.tiga {
+                background: url(image/admin3.svg);
+            }
+            div{
+                width: 220px;
+                // height: 175px;
+                background-color: white;
+                position: absolute;
+                top: 70%;
+                z-index: 1;
+                text-align: left;
+                padding: 20px;
+                h2{
+                    font-size: 1rem;
+                    font-family: $poppins;
+                    padding: 0 0 14px 0;
+                    color: #010420;
+                }    
+                
+                .stat{
+                    display: flex;
+                    width: 100%;
+                    span{
+                        width: 100%;
+                    }
+                    h3{
+                        font-size: 24px;
+                        font-family: $poppins;
+                    }
+                    p{
+                        font-size: 10px;
+                        font-family: $inter;
+                        color: #ADADBA;
+                    }
+                }
+                button{
+                    border: 0px;
+                    color: #B33CDB;
+                    background-color: transparent;
+                    padding: 20px 0;
+                    display: flex;
+                    font-weight: 400;
+                    cursor: pointer;
+                    svg{
+                        width: 1rem;
+                        height: 1rem;
+                    }
+                } 
+                button > svg {
+                    width: 20px;
+                    margin-left: 10px;
+                    transition: transform .3s ease-in-out;
+                }
+                  
+                button:hover svg {
+                    transform: translateX(5px);
+                }
+                  
+                button:active {
+                    transform: scale(0.95);
+                }
+            }
         }
     }
 }
