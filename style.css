@@ -161,6 +161,7 @@
 #feature .feature-head {
   width: 550px;
   text-align: center;
+  margin: 20px 0px;
 }
 #feature .feature-head h1 {
   font-family: "Poppins";
@@ -305,4 +306,49 @@
 }
 #community .community-container .communtiy-right button:active {
   transform: scale(0.95);
+}
+
+#statistic {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-color: #231A36;
+  color: white;
+}
+#statistic .statistic-text {
+  max-width: 650px;
+  margin: 0 70px;
+  text-align: center;
+}
+#statistic .statistic-text h1 {
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 2rem;
+}
+#statistic .statistic-text span {
+  height: auto;
+  font-family: "Inter";
+  font-size: 16px;
+  color: #7B9292;
+}
+#statistic .statistic-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+#statistic .statistic-container h2 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+}
+#statistic .statistic-container p {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7B9292;
 }/*# sourceMappingURL=style.css.map */
