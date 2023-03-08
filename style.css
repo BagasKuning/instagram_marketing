@@ -119,7 +119,7 @@ nav button {
 #header .main-container .main-container-right {
   z-index: 2;
   width: 50%;
-  height: 706px;
+  height: 100%;
 }
 #header .main-container .main-container-right img {
   height: 100%;
@@ -391,19 +391,25 @@ nav button {
 #service .service-container .card {
   width: 280px;
   height: 240px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
   position: relative;
 }
 #service .service-container .card.satu {
   background: url(image/admin1.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #service .service-container .card.dua {
   background: url(image/admin2.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #service .service-container .card.tiga {
   background: url(image/admin3.svg);
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #service .service-container .card div {
   width: 220px;
@@ -676,6 +682,12 @@ footer span {
   }
 }
 @media (max-width: 895px) {
+  nav ul {
+    justify-content: space-evenly;
+  }
+  nav ul a {
+    font-size: 0.9rem;
+  }
   #header .main-container .main-container-left {
     padding: 0;
   }
@@ -696,11 +708,50 @@ footer span {
   }
   #header {
     height: 700px;
+    margin-bottom: 160px;
+  }
+  #header .header-linear {
+    height: 357px;
+  }
+  #header .brand div img {
+    width: 75px;
+  }
+  #header .main-container {
+    height: 80%;
   }
   #header .main-container .main-container-left .main-text h1 {
     font-size: 2.5rem;
   }
   #header .main-container .main-container-left .main-text p {
     padding: 10px 50px 15px 50px;
+  }
+  #feature .feature-head {
+    margin: 40px 0;
+  }
+  #service {
+    margin: 40px 0;
+  }
+  #service .service-text p {
+    font-size: 10px;
+  }
+  #service .service-container {
+    width: 98%;
+  }
+  #service .service-container .card {
+    width: 199px;
+    height: 166px;
+  }
+  #service .service-container .card div {
+    width: auto;
+  }
+  #service .service-container .card div h2 {
+    padding-bottom: 6px;
+    font-size: 0.8rem;
+  }
+  #service .service-container .card div .stat h3 {
+    font-size: 1rem;
+  }
+  #service .service-container .card div .stat p {
+    font-size: 7px;
   }
 }/*# sourceMappingURL=style.css.map */

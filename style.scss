@@ -133,7 +133,7 @@ nav{
         // background-repeat: no-repeat;
         z-index: 2;
         width: 50%;
-        height: 706px;
+        height: 100%;
         img{
             height: 100%;
             width: 100%;
@@ -431,18 +431,24 @@ nav{
         .card {
             width: 280px;
             height: 240px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
             position: relative;
             &.satu{
                 background: url(image/admin1.svg);
+                background-position: top;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             &.dua {
                 background: url(image/admin2.svg);
+                background-position: top;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             &.tiga {
                 background: url(image/admin3.svg);
+                background-position: top;
+                background-size: contain;
+                background-repeat: no-repeat;
             }
             div{
                 width: 220px;
@@ -788,6 +794,14 @@ footer{
 
 
   @media (max-width: 895px){
+    nav{
+        ul{
+            justify-content: space-evenly;
+            a{
+                font-size: .9rem;
+            }
+        }
+    }
     #header{
         .main-container{
             .main-container-left{
@@ -819,7 +833,20 @@ footer{
     }
     #header{
         height: 700px;
+        margin-bottom: 160px;
+
+        .header-linear{
+            height: 357px;
+        }
+        .brand{
+            div{
+                img{
+                    width: 75px;
+                }
+            }
+        }
         .main-container{
+            height: 80%;
             .main-container-left{
                 .main-text{
                     h1{
@@ -827,6 +854,46 @@ footer{
                     }
                     p{
                         padding: 10px 50px 15px 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    #feature{
+        .feature-head{
+            margin: 40px 0;
+        }
+    }
+
+    #service{
+        margin: 40px 0;
+        .service-text{
+            p{
+                font-size: 10px;
+            }
+        }
+
+        .service-container{
+            width: 98%;
+
+            .card{
+                width: 199px;
+                height: 166px;
+
+                div{
+                    width: auto;
+                    h2{
+                        padding-bottom: 6px;
+                        font-size: .8rem;
+                    }
+                    .stat{
+                        h3{
+                            font-size: 1rem;
+                        }
+                        p{
+                            font-size: 7px;
+                        }
                     }
                 }
             }
