@@ -734,6 +734,9 @@ footer span {
   #service .service-text p {
     font-size: 10px;
   }
+  #service .service-text h1 {
+    font-size: 30px;
+  }
   #service .service-container {
     width: 98%;
   }
@@ -753,5 +756,23 @@ footer span {
   }
   #service .service-container .card div .stat p {
     font-size: 7px;
+  }
+  #testimonial .testimonal-text h1 {
+    font-size: 30px;
+  }
+  #testimonial .testimonal-text p {
+    font-size: 10px;
+  }
+  #testimonial .testimonal-container .testimonal-container-left {
+    padding: 0 10px;
+  }
+  #testimonial .testimonal-container .testimonal-container-left p {
+    font-size: 16px;
+  }
+  #testimonial .testimonal-container .testimonal-container-left img {
+    display: none;
+  }
+  #testimonial .testimonal-container .testimonal-container-right img {
+    width: 200px;
   }
 }/*# sourceMappingURL=style.css.map */
