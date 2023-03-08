@@ -17,7 +17,10 @@ nav{
     z-index: 999;
     color: white;
     margin-top: 30px;
-
+    svg{
+        width: 34px;
+        display: none;
+    }
     h2{
         font-family: Lekton;
         font-size: 34px;
@@ -178,8 +181,8 @@ nav{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    margin-top: 80px;
+    justify-content: space-evenly;
+    margin-top: 30px;
     .feature-head{
         width: 550px;
         text-align: center;
@@ -206,6 +209,14 @@ nav{
         align-items: center;
         max-width: 750px;
         margin: 0 0 0 50px;
+        .feature-container-right{
+            background: url(image/card1.svg);
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
         h3{
             font-family: $inter;
             font-style: normal;
@@ -275,10 +286,13 @@ nav{
         display: flex;
         justify-content: center;
         align-items: center;
-        .communtiy-left{
-            img{
-                height: auto;
-            }
+        .community-left{
+            background: url(image/comunity.svg);
+            width: 100%;
+            height: 100%;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
         }
         .communtiy-right{
             display: flex;
@@ -555,6 +569,7 @@ nav{
         max-width: 900px;
         height: 479px;
         margin: 0px 30px;
+        align-items: center;
         .testimonal-container-left{
             padding: 0 40px;
             p{
@@ -615,7 +630,6 @@ nav{
         }
         p{
             font-family: $inter;
-            width: 551px;
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -701,6 +715,9 @@ footer{
         }
 
         div{
+            display: flex;
+            width: 100px;
+            height: 100%;
             svg{
                 width: 15px;
                 height: 15px;
@@ -752,12 +769,6 @@ footer{
 
     }
 
-    #community{
-        .community-container{
-
-        }
-    }
-
 
     #service{
         margin: 80px 0;
@@ -782,11 +793,6 @@ footer{
         }
     }
 
-    #testimonal{
-        .testimonal-container{
-            // margin: 0px 30px;
-        }
-    }
   }
 
 
@@ -832,7 +838,7 @@ footer{
         }
     }
     #header{
-        height: 700px;
+        height: 572px;
         margin-bottom: 160px;
 
         .header-linear{
@@ -862,12 +868,13 @@ footer{
 
     #feature{
         .feature-head{
-            margin: 40px 0;
+            margin: 10px 0;
         }
     }
 
     #service{
         margin: 40px 0;
+        height: 600px;
         .service-text{
             p{
                 font-size: 10px;
@@ -879,7 +886,7 @@ footer{
 
         .service-container{
             width: 98%;
-
+            gap: 50px;
             .card{
                 width: 199px;
                 height: 166px;
@@ -889,6 +896,14 @@ footer{
                     h2{
                         padding-bottom: 6px;
                         font-size: .8rem;
+                    }
+                    button{
+                        align-items: center;
+                        padding: 5px 0;
+                        font-size: 10px;
+                        svg{
+                            width: 10px;
+                        }
                     }
                     .stat{
                         h3{
@@ -905,16 +920,19 @@ footer{
 
 
     #testimonial{
+        height: 500px;
+        margin-top: 100px;
         .testimonal-text{
             h1{
                 font-size: 30px;
             }
             p{
-                font-size: 10px;
+                font-size: 13px;
             }
         }
 
         .testimonal-container{
+            align-items: center;
             .testimonal-container-left{
                 padding: 0 10px;
                 p{
@@ -935,6 +953,132 @@ footer{
         }
     }
 
-
+    #newsletter{
+        .newsletter-container{
+            height: auto;
+            max-width: 90%;
+            margin: 50px;
+            padding: 25px;
+            h1{
+                font-size: 35px;
+                line-height: normal;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
     
+
+
+#community{
+    .community-container{
+        width: 100%;
+        margin: 0;
+        .community-left{
+            width: 40%;
+            background-size: contain;
+            img{
+                width: 100%;
+            }
+        }
+        .communtiy-right{
+            width: 50%;
+        }
+    }
+}
+}
+
+
+
+
+// handphone
+@media (max-width: 620px)   {
+
+    nav{
+        justify-content: space-around;
+        ul{
+            align-items: end;
+            flex-direction: column;  
+            opacity: 0;
+            position: absolute;
+            width: 100px;
+            height: auto;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.247);
+            padding: 15px;
+            right: 25%;
+            margin-top: 30px;
+            transition: .5s;
+            transform: translateY(30px);
+            border-radius: 10px;
+            li{
+                padding-bottom: 5px;
+            }
+        }
+        svg{
+            display: block;
+            cursor: pointer;
+        }
+    }
+    footer{
+        nav{
+            div{
+                svg{
+                    display: flex;
+                }
+            }
+        }
+    }
+
+    #header{
+        height: 430px;
+        margin-bottom: -60px;
+        .header-linear{
+            height: 400px;
+        }
+        .brand{
+            height: 80px;
+            justify-content: space-evenly;
+            span{
+                font-size: .7rem;
+            }
+            div{
+                img{
+                    width: 45px;    
+                }
+            }
+        }
+        .main-container{
+            justify-content: center;
+            .main-container-left{
+                width: 100%;
+                .main-text{
+                    h1{
+                        font-size: 3rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .main-container-right{
+                display: none;
+            }
+        }
+    }
+
+    #feature{
+        .feature-head{
+            width: 100%;
+            h1{
+                font-size: 2rem;
+            }
+            p{
+                font-size: .8rem;
+                padding: 10px 20px;
+            }
+        }
+    }
+
 }

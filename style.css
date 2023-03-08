@@ -15,6 +15,10 @@ nav {
   color: white;
   margin-top: 30px;
 }
+nav svg {
+  width: 34px;
+  display: none;
+}
 nav h2 {
   font-family: Lekton;
   font-size: 34px;
@@ -157,8 +161,8 @@ nav button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-top: 80px;
+  justify-content: space-evenly;
+  margin-top: 30px;
 }
 #feature .feature-head {
   width: 550px;
@@ -185,6 +189,14 @@ nav button {
   align-items: center;
   max-width: 750px;
   margin: 0 0 0 50px;
+}
+#feature .feature-container .feature-container-right {
+  background: url(image/card1.svg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #feature .feature-container h3 {
   font-family: "Inter";
@@ -250,8 +262,13 @@ nav button {
   justify-content: center;
   align-items: center;
 }
-#community .community-container .communtiy-left img {
-  height: auto;
+#community .community-container .community-left {
+  background: url(image/comunity.svg);
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 #community .community-container .communtiy-right {
   display: flex;
@@ -503,6 +520,7 @@ nav button {
   max-width: 900px;
   height: 479px;
   margin: 0px 30px;
+  align-items: center;
 }
 #testimonial .testimonal-container .testimonal-container-left {
   padding: 0 40px;
@@ -557,7 +575,6 @@ nav button {
 }
 #newsletter .newsletter-container p {
   font-family: "Inter";
-  width: 551px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -633,6 +650,11 @@ footer nav ul a {
   text-decoration: none;
   color: black;
 }
+footer nav div {
+  display: flex;
+  width: 100px;
+  height: 100%;
+}
 footer nav div svg {
   width: 15px;
   height: 15px;
@@ -707,7 +729,7 @@ footer span {
     display: none;
   }
   #header {
-    height: 700px;
+    height: 572px;
     margin-bottom: 160px;
   }
   #header .header-linear {
@@ -726,10 +748,11 @@ footer span {
     padding: 10px 50px 15px 50px;
   }
   #feature .feature-head {
-    margin: 40px 0;
+    margin: 10px 0;
   }
   #service {
     margin: 40px 0;
+    height: 600px;
   }
   #service .service-text p {
     font-size: 10px;
@@ -739,6 +762,7 @@ footer span {
   }
   #service .service-container {
     width: 98%;
+    gap: 50px;
   }
   #service .service-container .card {
     width: 199px;
@@ -751,17 +775,32 @@ footer span {
     padding-bottom: 6px;
     font-size: 0.8rem;
   }
+  #service .service-container .card div button {
+    align-items: center;
+    padding: 5px 0;
+    font-size: 10px;
+  }
+  #service .service-container .card div button svg {
+    width: 10px;
+  }
   #service .service-container .card div .stat h3 {
     font-size: 1rem;
   }
   #service .service-container .card div .stat p {
     font-size: 7px;
   }
+  #testimonial {
+    height: 500px;
+    margin-top: 100px;
+  }
   #testimonial .testimonal-text h1 {
     font-size: 30px;
   }
   #testimonial .testimonal-text p {
-    font-size: 10px;
+    font-size: 13px;
+  }
+  #testimonial .testimonal-container {
+    align-items: center;
   }
   #testimonial .testimonal-container .testimonal-container-left {
     padding: 0 10px;
@@ -774,5 +813,105 @@ footer span {
   }
   #testimonial .testimonal-container .testimonal-container-right img {
     width: 200px;
+  }
+  #newsletter .newsletter-container {
+    height: auto;
+    max-width: 90%;
+    margin: 50px;
+    padding: 25px;
+  }
+  #newsletter .newsletter-container h1 {
+    font-size: 35px;
+    line-height: normal;
+  }
+  #newsletter .newsletter-container p {
+    font-size: 10px;
+  }
+  #community .community-container {
+    width: 100%;
+    margin: 0;
+  }
+  #community .community-container .community-left {
+    width: 40%;
+    background-size: contain;
+  }
+  #community .community-container .community-left img {
+    width: 100%;
+  }
+  #community .community-container .communtiy-right {
+    width: 50%;
+  }
+}
+@media (max-width: 620px) {
+  nav {
+    justify-content: space-around;
+  }
+  nav ul {
+    align-items: end;
+    flex-direction: column;
+    opacity: 0;
+    position: absolute;
+    width: 100px;
+    height: auto;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.247);
+    padding: 15px;
+    right: 25%;
+    margin-top: 30px;
+    transition: 0.5s;
+    transform: translateY(30px);
+    border-radius: 10px;
+  }
+  nav ul li {
+    padding-bottom: 5px;
+  }
+  nav svg {
+    display: block;
+    cursor: pointer;
+  }
+  footer nav div svg {
+    display: flex;
+  }
+  #header {
+    height: 430px;
+    margin-bottom: -60px;
+  }
+  #header .header-linear {
+    height: 400px;
+  }
+  #header .brand {
+    height: 80px;
+    justify-content: space-evenly;
+  }
+  #header .brand span {
+    font-size: 0.7rem;
+  }
+  #header .brand div img {
+    width: 45px;
+  }
+  #header .main-container {
+    justify-content: center;
+  }
+  #header .main-container .main-container-left {
+    width: 100%;
+  }
+  #header .main-container .main-container-left .main-text h1 {
+    font-size: 3rem;
+  }
+  #header .main-container .main-container-left .main-text p {
+    font-size: 1rem;
+  }
+  #header .main-container .main-container-right {
+    display: none;
+  }
+  #feature .feature-head {
+    width: 100%;
+  }
+  #feature .feature-head h1 {
+    font-size: 2rem;
+  }
+  #feature .feature-head p {
+    font-size: 0.8rem;
+    padding: 10px 20px;
   }
 }/*# sourceMappingURL=style.css.map */
