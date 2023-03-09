@@ -297,7 +297,7 @@ nav{
             background-position: center;
             background-repeat: no-repeat;
         }
-        .communtiy-right{
+        .community-right{
             display: flex;
             flex-direction: column;
             align-items: flex-end;
@@ -803,6 +803,9 @@ footer{
 
   @media (max-width: 895px){
     nav{
+        h2{
+            font-size: 28px;
+        }
         ul{
             justify-content: space-evenly;
             a{
@@ -984,7 +987,7 @@ footer{
                 width: 100%;
             }
         }
-        .communtiy-right{
+        .community-right{
             width: 50%;
         }
     }
@@ -1006,7 +1009,7 @@ footer{
 @media (max-width: 620px)   {
 
     nav{
-        justify-content: space-around;
+            justify-content: space-around;
         ul{
             align-items: end;
             flex-direction: column;  
@@ -1079,17 +1082,129 @@ footer{
         }
     }
 
+
+
     #feature{
+        height: 480px;
+        justify-content: space-around;
         .feature-head{
             width: 100%;
             h1{
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             p{
-                font-size: .8rem;
+                font-size: .65rem;
                 padding: 10px 20px;
             }
         }
+        .feature-container{
+            margin-left: 15px;
+            transform: translateX(15px);
+            .feature-container-left{
+                h3{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+        }
     }
+    #community{
+        transform: translateX(-15px);
+        .community-container{
+            .community-right{
+                h3{
+                    font-size: 10px;
+                }
+                h2{
+                    font-size: 23px;
+                }
+                p{
+                    font-size: 10px;
+                }
+            }
+            }
+        }
+
+
+
+    #statistic{
+        height: 340px;
+        .statistic-text{
+            h1{
+                font-size: 1.4rem;
+            }
+            span{
+                font-size: 10px;
+            }
+        }
+        .statistic-container{
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+
+
+    #service{
+        .service-text{
+            width: auto;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .service-container{
+            gap: 35px;
+        }
+    }
+
+
+    #testimonial{
+        margin-top: 70px;
+        .testimonal-text{
+            width: auto;
+            margin-bottom: 40px;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .testimonal-container{
+            .testimonal-container-left{
+                p{
+                    font-size: 13px;
+                }
+                div{
+                    h2{
+                        font-size: 1.3rem;
+                    }
+                    span{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    #newsletter{
+        .newsletter-container{
+            margin: 50px 20px;
+            h1{
+                font-size: 28px;
+            }
+            p{
+                line-height: normal;
+            }
+        }
+    }
+
 
 }

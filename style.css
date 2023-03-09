@@ -274,14 +274,14 @@ nav button {
   background-position: center;
   background-repeat: no-repeat;
 }
-#community .community-container .communtiy-right {
+#community .community-container .community-right {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
   max-width: 750px;
 }
-#community .community-container .communtiy-right h3 {
+#community .community-container .community-right h3 {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
@@ -291,7 +291,7 @@ nav button {
   text-transform: uppercase;
   color: #FBBA33;
 }
-#community .community-container .communtiy-right h2 {
+#community .community-container .community-right h2 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -300,7 +300,7 @@ nav button {
   color: #1F1F26;
   padding: 13px 0;
 }
-#community .community-container .communtiy-right p {
+#community .community-container .community-right p {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
@@ -309,7 +309,7 @@ nav button {
   letter-spacing: 0.01em;
   color: #426666;
 }
-#community .community-container .communtiy-right button {
+#community .community-container .community-right button {
   border: 0px;
   background-color: rgba(255, 255, 255, 0);
   padding: 20px 0;
@@ -317,19 +317,19 @@ nav button {
   font-weight: 400;
   cursor: pointer;
 }
-#community .community-container .communtiy-right button svg {
+#community .community-container .community-right button svg {
   width: 1rem;
   height: 1rem;
 }
-#community .community-container .communtiy-right button > svg {
+#community .community-container .community-right button > svg {
   width: 20px;
   margin-left: 10px;
   transition: transform 0.3s ease-in-out;
 }
-#community .community-container .communtiy-right button:hover svg {
+#community .community-container .community-right button:hover svg {
   transform: translateX(5px);
 }
-#community .community-container .communtiy-right button:active {
+#community .community-container .community-right button:active {
   transform: scale(0.95);
 }
 
@@ -709,6 +709,9 @@ footer span {
   }
 }
 @media (max-width: 895px) {
+  nav h2 {
+    font-size: 28px;
+  }
   nav ul {
     justify-content: space-evenly;
   }
@@ -843,7 +846,7 @@ footer span {
   #community .community-container .community-left img {
     width: 100%;
   }
-  #community .community-container .communtiy-right {
+  #community .community-container .community-right {
     width: 50%;
   }
   footer .footer ul {
@@ -913,14 +916,95 @@ footer span {
   #header .main-container .main-container-right {
     display: none;
   }
+  #feature {
+    height: 480px;
+    justify-content: space-around;
+  }
   #feature .feature-head {
     width: 100%;
   }
   #feature .feature-head h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   #feature .feature-head p {
-    font-size: 0.8rem;
+    font-size: 0.65rem;
     padding: 10px 20px;
+  }
+  #feature .feature-container {
+    margin-left: 15px;
+    transform: translateX(15px);
+  }
+  #feature .feature-container .feature-container-left h3 {
+    font-size: 10px;
+  }
+  #feature .feature-container .feature-container-left h2 {
+    font-size: 23px;
+  }
+  #feature .feature-container .feature-container-left p {
+    font-size: 10px;
+  }
+  #community {
+    transform: translateX(-15px);
+  }
+  #community .community-container .community-right h3 {
+    font-size: 10px;
+  }
+  #community .community-container .community-right h2 {
+    font-size: 23px;
+  }
+  #community .community-container .community-right p {
+    font-size: 10px;
+  }
+  #statistic {
+    height: 340px;
+  }
+  #statistic .statistic-text h1 {
+    font-size: 1.4rem;
+  }
+  #statistic .statistic-text span {
+    font-size: 10px;
+  }
+  #statistic .statistic-container h2 {
+    font-size: 20px;
+  }
+  #statistic .statistic-container p {
+    font-size: 10px;
+  }
+  #service .service-text {
+    width: auto;
+  }
+  #service .service-text h1 {
+    font-size: 1.5rem;
+  }
+  #service .service-container {
+    gap: 35px;
+  }
+  #testimonial {
+    margin-top: 70px;
+  }
+  #testimonial .testimonal-text {
+    width: auto;
+    margin-bottom: 40px;
+  }
+  #testimonial .testimonal-text h1 {
+    font-size: 1.5rem;
+  }
+  #testimonial .testimonal-container .testimonal-container-left p {
+    font-size: 13px;
+  }
+  #testimonial .testimonal-container .testimonal-container-left div h2 {
+    font-size: 1.3rem;
+  }
+  #testimonial .testimonal-container .testimonal-container-left div span {
+    font-size: 0.8rem;
+  }
+  #newsletter .newsletter-container {
+    margin: 50px 20px;
+  }
+  #newsletter .newsletter-container h1 {
+    font-size: 28px;
+  }
+  #newsletter .newsletter-container p {
+    line-height: normal;
   }
 }/*# sourceMappingURL=style.css.map */
