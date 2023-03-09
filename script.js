@@ -18,3 +18,15 @@ hamburger.addEventListener('click', () => {
         navUl.style.opacity = '1';
       }
 })
+
+
+window.addEventListener('resize', function(event) {
+    if(window.innerWidth > 620) {
+        navUl.style.opacity = '1';
+        navUl.style.transform = 'translateY(0)'
+    } else {
+        navUl.style.opacity = '0';
+        navUl.style.transform = 'translateY(30px)'
+    }
+});
+  
