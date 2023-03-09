@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 nav {
   width: 100%;
   height: 42px;
@@ -621,7 +625,7 @@ footer {
   align-items: center;
   justify-content: space-evenly;
 }
-footer nav {
+footer .footer {
   width: 100%;
   height: 42px;
   display: flex;
@@ -631,7 +635,7 @@ footer nav {
   z-index: 999;
   color: black;
 }
-footer nav h2 {
+footer .footer h2 {
   font-family: Lekton;
   font-size: 34px;
   font-weight: 700;
@@ -639,25 +643,23 @@ footer nav h2 {
   letter-spacing: 0em;
   text-align: left;
 }
-footer nav ul {
+footer .footer ul {
   width: 325px;
   height: 19px;
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
-footer nav ul a {
+footer .footer ul a {
   text-decoration: none;
   color: black;
 }
-footer nav div {
+footer .footer div {
   display: flex;
-  width: 100px;
-  height: 100%;
 }
-footer nav div svg {
-  width: 15px;
-  height: 15px;
+footer .footer div svg {
+  width: 18px;
+  height: 18px;
   margin: 0px 10px;
 }
 footer span {
@@ -668,6 +670,9 @@ footer span {
 }
 
 @media (max-width: 1035px) {
+  #header {
+    justify-content: space-evenly;
+  }
   #header .main-container .main-container-left {
     padding: 50px 0;
     text-align: center;
@@ -841,6 +846,9 @@ footer span {
   #community .community-container .communtiy-right {
     width: 50%;
   }
+  footer .footer ul {
+    display: none;
+  }
 }
 @media (max-width: 620px) {
   nav {
@@ -873,8 +881,9 @@ footer span {
     display: flex;
   }
   #header {
-    height: 430px;
-    margin-bottom: -60px;
+    height: 600px;
+    justify-content: center;
+    margin-bottom: 30px;
   }
   #header .header-linear {
     height: 400px;

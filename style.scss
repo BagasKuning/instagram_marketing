@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    overflow-x: hidden;
+}
 
 $poppins :'Poppins';
 $inter: 'Inter';
@@ -684,7 +687,7 @@ footer{
     align-items: center;
     justify-content: space-evenly;
 
-    nav{
+    .footer{
         width: 100%;
         height: 42px;
         display: flex;
@@ -716,11 +719,9 @@ footer{
 
         div{
             display: flex;
-            width: 100px;
-            height: 100%;
             svg{
-                width: 15px;
-                height: 15px;
+                width: 18px;
+                height: 18px;
                 margin: 0px 10px;
             }
         }
@@ -739,6 +740,7 @@ footer{
 @media (max-width: 1035px) {
 
     #header{
+        justify-content: space-evenly;
         .main-container{
             .main-container-left{
                 padding: 50px 0;
@@ -987,6 +989,14 @@ footer{
         }
     }
 }
+
+footer{
+    .footer{
+        ul{
+            display: none;
+        }
+    }
+}
 }
 
 
@@ -1032,8 +1042,9 @@ footer{
     }
 
     #header{
-        height: 430px;
-        margin-bottom: -60px;
+        height: 600px;
+        justify-content: center;
+        margin-bottom: 30px;
         .header-linear{
             height: 400px;
         }

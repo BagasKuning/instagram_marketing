@@ -1,5 +1,7 @@
 const hamburger = document.getElementsByClassName('hamburger')[0];
 const navUl = document.getElementsByClassName('ul')[0];
+console.log(navUl)
+
 
 hamburger.addEventListener('click', () => {
     if (window.matchMedia("(max-width: 768px)").matches) {
