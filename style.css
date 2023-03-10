@@ -657,6 +657,9 @@ footer .footer ul a {
 footer .footer div {
   display: flex;
 }
+footer .footer div a {
+  color: black;
+}
 footer .footer div svg {
   width: 18px;
   height: 18px;
@@ -989,6 +992,9 @@ footer span {
   #testimonial .testimonal-text h1 {
     font-size: 1.5rem;
   }
+  #testimonial .testimonal-text p {
+    padding: 0 20px;
+  }
   #testimonial .testimonal-container .testimonal-container-left p {
     font-size: 13px;
   }
@@ -998,6 +1004,12 @@ footer span {
   #testimonial .testimonal-container .testimonal-container-left div span {
     font-size: 0.8rem;
   }
+  #testimonial .testimonal-container .testimonal-container-right img {
+    width: 155px;
+  }
+  #newsletter {
+    height: 250px;
+  }
   #newsletter .newsletter-container {
     margin: 50px 20px;
   }
@@ -1006,5 +1018,95 @@ footer span {
   }
   #newsletter .newsletter-container p {
     line-height: normal;
+  }
+}
+@media (max-width: 460px) {
+  nav h2 {
+    font-size: 20px;
+  }
+  nav svg {
+    width: 23px;
+  }
+  #header {
+    height: 460px;
+  }
+  #header .main-container .main-container-left {
+    justify-content: center;
+  }
+  #header .main-container .main-container-left .main-text h1 {
+    font-size: 2rem;
+  }
+  #header .main-container .main-container-left .main-text p {
+    font-size: 0.8rem;
+  }
+  #header .brand {
+    margin: 30px 0;
+  }
+  #header .brand div {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px;
+  }
+  #feature {
+    height: 355px;
+    margin-top: 0px;
+    justify-content: space-between;
+  }
+  #feature .feature-head h1 {
+    font-size: 1.2rem;
+  }
+  #feature .feature-head p {
+    line-height: 18px;
+  }
+  #feature .feature-container {
+    text-align: center;
+    transform: translateX(0);
+    margin-left: 0;
+  }
+  #feature .feature-container .feature-container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #feature .feature-container .feature-container-left p {
+    padding: 0 10px;
+  }
+  #feature .feature-container .feature-container-left h2 {
+    padding: 6px 10px;
+  }
+  #feature .feature-container .feature-container-right {
+    display: none;
+    justify-content: center;
+  }
+  #community {
+    transform: translateX(0);
+  }
+  #community .community-container {
+    height: 250px;
+  }
+  #community .community-container .community-left {
+    display: none;
+  }
+  #community .community-container .community-right {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #community .community-container .community-right p {
+    padding: 0 10px;
+  }
+  #community .community-container .community-right h2 {
+    padding: 6px 10px;
+  }
+  #statistic {
+    height: 305px;
+  }
+  #statistic .statistic-text {
+    margin: 0px 20px;
+  }
+  #statistic .statistic-text h1 {
+    font-size: 1.2rem;
   }
 }/*# sourceMappingURL=style.css.map */

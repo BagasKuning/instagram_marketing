@@ -719,6 +719,9 @@ footer{
 
         div{
             display: flex;
+            a{
+                color: black;
+            }
             svg{
                 width: 18px;
                 height: 18px;
@@ -1174,11 +1177,15 @@ footer{
             h1{
                 font-size: 1.5rem;
             }
+            p{
+                padding: 0 20px;
+            }
         }
         .testimonal-container{
             .testimonal-container-left{
                 p{
                     font-size: 13px;
+                    
                 }
                 div{
                     h2{
@@ -1189,12 +1196,18 @@ footer{
                     }
                 }
             }
+            .testimonal-container-right{
+                img{
+                    width: 155px;
+                }
+            }
         }
     }
 
 
 
     #newsletter{
+        height: 250px;
         .newsletter-container{
             margin: 50px 20px;
             h1{
@@ -1202,6 +1215,116 @@ footer{
             }
             p{
                 line-height: normal;
+            }
+        }
+    }
+
+}
+
+
+
+@media (max-width: 460px){
+
+    nav{
+        h2{
+            font-size: 20px;
+        }
+        svg{
+            width: 23px;
+        }
+    }
+
+    #header{
+        height: 460px;
+        .main-container{
+            .main-container-left{
+                justify-content: center;
+                .main-text{
+                    h1{
+                       font-size: 2rem; 
+                    }
+                    p{
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+        .brand{
+            margin: 30px 0;
+            div{
+                flex-wrap: wrap;
+                gap: 10px;
+                margin: 20px;
+            }
+        }
+    }
+
+    #feature{
+        height: 355px;
+        margin-top: 0px;
+        justify-content: space-between;
+        .feature-head{
+            h1{
+                font-size: 1.2rem;
+            }
+            p{
+                line-height: 18px;
+                // font-size: .6rem;
+            }
+        }
+        .feature-container{
+            text-align: center;
+            transform: translateX(0);
+            margin-left: 0;
+            .feature-container-left{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                p{
+                    padding: 0 10px;
+                }
+                h2{
+                    padding: 6px 10px;
+                }
+            }
+            .feature-container-right{
+                display: none;
+                justify-content: center;
+            }
+        }
+    }
+
+
+    #community{
+        transform: translateX(0);
+        .community-container{
+            height: 250px;
+            .community-left{
+                display: none;
+            }
+            .community-right{
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                p{
+                    padding: 0 10px;
+                }
+                h2{
+                    padding: 6px 10px;
+                }
+            }
+        }
+    }
+
+
+    #statistic{
+        height: 305px;
+        .statistic-text{
+            margin: 0px 20px;
+            h1{
+                font-size: 1.2rem;
             }
         }
     }
