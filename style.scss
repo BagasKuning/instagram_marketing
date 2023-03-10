@@ -1038,11 +1038,15 @@ footer{
         }
     }
     footer{
-        nav{
-            div{
-                svg{
-                    display: flex;
-                }
+        .footer{
+            h2{
+                font-size: 20px;
+            }
+        }
+        div{
+            svg{
+                display: flex;
+                width: 15px;
             }
         }
     }
@@ -1263,6 +1267,7 @@ footer{
         height: 355px;
         margin-top: 0px;
         justify-content: space-between;
+        height: auto;
         .feature-head{
             h1{
                 font-size: 1.2rem;
@@ -1299,7 +1304,7 @@ footer{
     #community{
         transform: translateX(0);
         .community-container{
-            height: 250px;
+            height: auto;
             .community-left{
                 display: none;
             }
@@ -1320,11 +1325,62 @@ footer{
 
 
     #statistic{
-        height: 305px;
+        height: auto;
+        .statistic-container{
+            flex-wrap: wrap;
+            gap: 12px;
+            padding-bottom: 50px;
+            padding-top: 20px;
+        }
         .statistic-text{
             margin: 0px 20px;
+            padding-top: 50px;
+            padding-bottom: 20px;
             h1{
                 font-size: 1.2rem;
+            }
+        }
+    }
+
+
+    #service{
+        height: auto;
+        .service-container{
+            gap: 10px;
+            .card{
+                width: 120px;
+                div{
+                    padding: 5px;
+                    h2{
+                        font-size: 0.55rem;
+                        padding-bottom: 2px;
+                    }
+                    .stat{
+                            h3{
+                                font-size: .7rem;
+                            }
+                    }
+                }
+            }
+        }
+    }
+
+
+    #testimonial{
+        height: auto;
+        margin: 70px 0;
+        .testimonal-text{
+            margin-bottom: 60px;
+        }
+        .testimonal-container{
+            margin: 0 10px;
+            text-align: center;
+            height: auto;
+            flex-direction: column-reverse;
+            .testimonal-container-left{
+                div{
+                    padding: 0;
+                }
             }
         }
     }

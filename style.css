@@ -883,8 +883,12 @@ footer span {
     display: block;
     cursor: pointer;
   }
-  footer nav div svg {
+  footer .footer h2 {
+    font-size: 20px;
+  }
+  footer div svg {
     display: flex;
+    width: 15px;
   }
   #header {
     height: 600px;
@@ -1051,6 +1055,7 @@ footer span {
     height: 355px;
     margin-top: 0px;
     justify-content: space-between;
+    height: auto;
   }
   #feature .feature-head h1 {
     font-size: 1.2rem;
@@ -1083,7 +1088,7 @@ footer span {
     transform: translateX(0);
   }
   #community .community-container {
-    height: 250px;
+    height: auto;
   }
   #community .community-container .community-left {
     display: none;
@@ -1101,12 +1106,55 @@ footer span {
     padding: 6px 10px;
   }
   #statistic {
-    height: 305px;
+    height: auto;
+  }
+  #statistic .statistic-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    padding-bottom: 50px;
+    padding-top: 20px;
   }
   #statistic .statistic-text {
     margin: 0px 20px;
+    padding-top: 50px;
+    padding-bottom: 20px;
   }
   #statistic .statistic-text h1 {
     font-size: 1.2rem;
+  }
+  #service {
+    height: auto;
+  }
+  #service .service-container {
+    gap: 10px;
+  }
+  #service .service-container .card {
+    width: 120px;
+  }
+  #service .service-container .card div {
+    padding: 5px;
+  }
+  #service .service-container .card div h2 {
+    font-size: 0.55rem;
+    padding-bottom: 2px;
+  }
+  #service .service-container .card div .stat h3 {
+    font-size: 0.7rem;
+  }
+  #testimonial {
+    height: auto;
+    margin: 70px 0;
+  }
+  #testimonial .testimonal-text {
+    margin-bottom: 60px;
+  }
+  #testimonial .testimonal-container {
+    margin: 0 10px;
+    text-align: center;
+    height: auto;
+    flex-direction: column-reverse;
+  }
+  #testimonial .testimonal-container .testimonal-container-left div {
+    padding: 0;
   }
 }/*# sourceMappingURL=style.css.map */
