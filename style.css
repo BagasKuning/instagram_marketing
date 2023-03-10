@@ -50,6 +50,10 @@ nav button {
   border: 0px;
   cursor: pointer;
   z-index: 9999;
+  transition: 0.2s;
+}
+nav button:hover {
+  box-shadow: 0 0 40px 3px rgba(255, 255, 255, 0.3137254902);
 }
 
 #header {
@@ -934,7 +938,7 @@ footer span {
     font-size: 1.5rem;
   }
   #feature .feature-head p {
-    font-size: 0.65rem;
+    font-size: 12px;
     padding: 10px 20px;
   }
   #feature .feature-container {
@@ -948,7 +952,7 @@ footer span {
     font-size: 23px;
   }
   #feature .feature-container .feature-container-left p {
-    font-size: 10px;
+    font-size: 12px;
   }
   #community {
     transform: translateX(-15px);
@@ -960,7 +964,7 @@ footer span {
     font-size: 23px;
   }
   #community .community-container .community-right p {
-    font-size: 10px;
+    font-size: 12px;
   }
   #statistic {
     height: 340px;
@@ -975,7 +979,7 @@ footer span {
     font-size: 20px;
   }
   #statistic .statistic-container p {
-    font-size: 10px;
+    font-size: 12px;
   }
   #service .service-text {
     width: auto;
@@ -1041,7 +1045,7 @@ footer span {
     font-size: 2rem;
   }
   #header .main-container .main-container-left .main-text p {
-    font-size: 0.8rem;
+    padding: 10px 30px;
   }
   #header .brand {
     margin: 30px 0;
@@ -1057,11 +1061,16 @@ footer span {
     justify-content: space-between;
     height: auto;
   }
+  #feature .feature-head {
+    margin-bottom: 30px;
+  }
   #feature .feature-head h1 {
-    font-size: 1.2rem;
+    font-size: 23px;
+    padding: 0 10px;
   }
   #feature .feature-head p {
     line-height: 18px;
+    font-size: 12px;
   }
   #feature .feature-container {
     text-align: center;
@@ -1073,6 +1082,7 @@ footer span {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 30px;
   }
   #feature .feature-container .feature-container-left p {
     padding: 0 10px;
@@ -1098,6 +1108,7 @@ footer span {
     justify-content: center;
     align-items: center;
     text-align: center;
+    margin-bottom: 30px;
   }
   #community .community-container .community-right p {
     padding: 0 10px;
