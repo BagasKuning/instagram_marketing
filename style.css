@@ -93,7 +93,7 @@ nav button:hover {
   z-index: 1;
 }
 #header .main-container .main-container-left p {
-  padding: 5px 150px 15px 0;
+  padding: 18px 150px 25px 0;
   color: #425466;
 }
 #header .main-container .main-container-left h1 {
@@ -699,7 +699,7 @@ footer span {
     line-height: normal;
   }
   #header .main-container .main-container-left .main-text p {
-    padding: 5px 0px 15px 0;
+    padding: 18px 0px 25px 0;
   }
   #header .main-container .main-container-left .main-text button {
     width: 160px;
@@ -897,7 +897,7 @@ footer span {
   #header {
     height: 600px;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
   }
   #header .header-linear {
     height: 400px;
@@ -1038,6 +1038,9 @@ footer span {
   #header {
     height: 460px;
   }
+  #header .header-linear {
+    height: 409px;
+  }
   #header .main-container .main-container-left {
     justify-content: center;
   }
@@ -1096,6 +1099,7 @@ footer span {
   }
   #community {
     transform: translateX(0);
+    margin-bottom: 15px;
   }
   #community .community-container {
     height: auto;

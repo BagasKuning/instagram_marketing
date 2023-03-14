@@ -95,7 +95,7 @@ nav{
         width: 50%;
         z-index: 1;
         p{
-            padding: 5px 150px 15px 0;
+            padding: 18px 150px 25px 0;
             color: #425466;
         }
         h1{
@@ -767,7 +767,7 @@ footer{
                         line-height: normal;
                     }
                     p{
-                        padding: 5px 0px 15px 0
+                        padding: 18px 0px 25px 0;
                     }
                     button{
                         width: 160px;
@@ -1058,7 +1058,7 @@ footer{
     #header{
         height: 600px;
         justify-content: center;
-        margin-bottom: 30px;
+        margin-bottom: 0px;
         .header-linear{
             height: 400px;
         }
@@ -1244,6 +1244,9 @@ footer{
 
     #header{
         height: 460px;
+        .header-linear{
+            height: 409px;
+        }
         .main-container{
             .main-container-left{
                 justify-content: center;
@@ -1310,6 +1313,7 @@ footer{
 
     #community{
         transform: translateX(0);
+        margin-bottom: 15px;
         .community-container{
             height: auto;
             .community-left{
@@ -1372,7 +1376,6 @@ footer{
             }
         }
     }
-
 
     #testimonial{
         height: auto;
