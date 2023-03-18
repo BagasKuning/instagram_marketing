@@ -1256,6 +1256,9 @@ footer{
                     }
                     p{
                         padding: 10px 30px;
+                        margin: 8px 0;
+                        font-family: $inter;
+                        font-size: .8rem;
                     }
                 }
             }
@@ -1339,10 +1342,22 @@ footer{
     #statistic{
         height: auto;
         .statistic-container{
-            flex-wrap: wrap;
-            gap: 12px;
-            padding-bottom: 50px;
-            padding-top: 20px;
+            display: grid;
+            place-items: center;
+            gap: 25px;
+            padding-bottom: 40px;
+            padding-top: 10px;
+            span{
+                width: 159px;
+                display: flex;
+                align-items: center;
+            }
+            h2{
+                font-size: 30px;
+            }
+            p{
+                margin-left: 10px;
+            }
         }
         .statistic-text{
             margin: 0px 20px;
@@ -1358,22 +1373,23 @@ footer{
     #service{
         height: auto;
         .service-container{
-            gap: 10px;
-            .card{
-                width: 120px;
-                div{
-                    padding: 5px;
-                    h2{
-                        font-size: 0.55rem;
-                        padding-bottom: 2px;
-                    }
-                    .stat{
-                            h3{
-                                font-size: .7rem;
-                            }
-                    }
-                }
-            }
+            // gap: 10px;
+            display: grid;
+            // .card{
+            //     width: 120px;
+            //     div{
+            //         padding: 5px;
+            //         h2{
+            //             font-size: 0.55rem;
+            //             padding-bottom: 2px;
+            //         }
+            //         .stat{
+            //                 h3{
+            //                     font-size: .7rem;
+            //                 }
+            //         }
+            //     }
+            // }
         }
     }
 

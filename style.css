@@ -1049,6 +1049,9 @@ footer span {
   }
   #header .main-container .main-container-left .main-text p {
     padding: 10px 30px;
+    margin: 8px 0;
+    font-family: "Inter";
+    font-size: 0.8rem;
   }
   #header .brand {
     margin: 30px 0;
@@ -1124,10 +1127,22 @@ footer span {
     height: auto;
   }
   #statistic .statistic-container {
-    flex-wrap: wrap;
-    gap: 12px;
-    padding-bottom: 50px;
-    padding-top: 20px;
+    display: grid;
+    place-items: center;
+    gap: 25px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+  }
+  #statistic .statistic-container span {
+    width: 159px;
+    display: flex;
+    align-items: center;
+  }
+  #statistic .statistic-container h2 {
+    font-size: 30px;
+  }
+  #statistic .statistic-container p {
+    margin-left: 10px;
   }
   #statistic .statistic-text {
     margin: 0px 20px;
@@ -1141,20 +1156,7 @@ footer span {
     height: auto;
   }
   #service .service-container {
-    gap: 10px;
-  }
-  #service .service-container .card {
-    width: 120px;
-  }
-  #service .service-container .card div {
-    padding: 5px;
-  }
-  #service .service-container .card div h2 {
-    font-size: 0.55rem;
-    padding-bottom: 2px;
-  }
-  #service .service-container .card div .stat h3 {
-    font-size: 0.7rem;
+    display: grid;
   }
   #testimonial {
     height: auto;
