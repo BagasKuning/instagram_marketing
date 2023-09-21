@@ -900,7 +900,8 @@ footer span {
     margin-bottom: 0px;
   }
   #header .header-linear {
-    height: 400px;
+    height: 560px;
+    background-size: cover;
   }
   #header .brand {
     height: 80px;
@@ -1036,25 +1037,28 @@ footer span {
     width: 23px;
   }
   #header {
-    height: 460px;
+    height: 100vh;
+    justify-content: flex-start;
   }
   #header .header-linear {
-    height: 409px;
+    height: 100vh;
   }
   #header .main-container .main-container-left {
     justify-content: center;
   }
   #header .main-container .main-container-left .main-text h1 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   #header .main-container .main-container-left .main-text p {
     padding: 10px 30px;
     margin: 8px 0;
     font-family: "Inter";
-    font-size: 0.8rem;
+    font-size: .9rem;
   }
   #header .brand {
+    position: absolute;
     margin: 30px 0;
+    top: 100%;
   }
   #header .brand div {
     flex-wrap: wrap;
@@ -1063,7 +1067,7 @@ footer span {
   }
   #feature {
     height: 355px;
-    margin-top: 0px;
+    margin-top: 120px;
     justify-content: space-between;
     height: auto;
   }
